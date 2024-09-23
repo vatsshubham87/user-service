@@ -1,23 +1,24 @@
 package com.microservice.User.Service.entities;
 
+import org.springframework.data.annotation.Id;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Rating {
+public class Hotel {
 
-   private String RatingId;
-   private String userId;
-   private String HotelId;
-   private int rating;
-   private String feedback;
-   private Hotel hotel;
-
+    @Id
+   private String id;
+   private String name;
+   private String location;
+    
 }
